@@ -10,12 +10,6 @@ CNSL-bench is a Chinese National Sign Language benchmark for evaluating the intr
 - The paper is available on [arXiv](https://arxiv.org/abs/2604.22367), and the PDF is also available in this repository.
 - The full benchmark data will be released after the copyright-sensitive media files are cleared.
 
-## TODO
-
-- Release the full benchmark data after the copyright-sensitive media files are cleared.
-- Release the evaluation scripts for text, image, and video inputs.
-- Add aggregate model results and leaderboard-style summaries.
-
 ## Motivation
 
 Current MLLMs have strong general image and video understanding ability, but their sign language understanding remains underexplored. CNSL-bench provides a controlled four-choice evaluation setting for Chinese National Sign Language, covering text, image, and video inputs.
@@ -41,12 +35,28 @@ Each example is a multiple-choice question. The model receives one modality inpu
 - Image: illustrative sign images.
 - Video: isolated sign-language videos.
 
-Toy examples are provided in [data/examples/sample_questions.jsonl](./data/examples/sample_questions.jsonl):
+A toy JSONL example is provided in [data/examples/sample_questions.jsonl](./data/examples/sample_questions.jsonl):
 
-```jsonl
-{"id":"toy_text_0001","gloss":"sign language","modality":"text","input":"placeholders/text/toy_text_0001.txt","question":"What is the meaning of the sign?","options":{"A":"compute","B":"sign language","C":"language","D":"school"},"answer":"B","category":{"air_writing":false,"finger_spelling":false,"manual_alphabet":false}}
-{"id":"toy_image_0001","gloss":"school","modality":"image","input":"placeholders/images/toy_image_0001.jpg","question":"What is the meaning of the sign?","options":{"A":"teacher","B":"student","C":"school","D":"book"},"answer":"C","category":{"air_writing":false,"finger_spelling":false,"manual_alphabet":false}}
-{"id":"toy_video_0001","gloss":"China","modality":"video","input":"placeholders/videos/toy_video_0001.mp4","question":"What is the meaning of the sign?","options":{"A":"China","B":"Beijing","C":"language","D":"people"},"answer":"A","category":{"air_writing":false,"finger_spelling":false,"manual_alphabet":false}}
+```json
+{
+  "id": "example_id",
+  "gloss": "sign language",
+  "modality": "image",
+  "input": "path_or_reference_to_input",
+  "question": "What is the meaning of the sign?",
+  "options": {
+    "A": "compute",
+    "B": "sign language",
+    "C": "language",
+    "D": "school"
+  },
+  "answer": "B",
+  "category": {
+    "air_writing": false,
+    "finger_spelling": false,
+    "manual_alphabet": false
+  }
+}
 ```
 
 Full media-bearing files are not included in this git repository yet. Placeholder folders are kept under [data/placeholders](./data/placeholders/) for the future release.
@@ -72,6 +82,30 @@ The following figures summarize the main findings from the paper: current MLLMs 
   </tr>
 </table>
 
+### Result Format
+
+Model-level summaries can follow this CSV schema:
+
+```csv
+model,model_type,modality,subset,accuracy,num_instances,notes
+Example-MLLM,open-source,text,overall,,,
+Example-MLLM,open-source,image,overall,,,
+Example-MLLM,open-source,video,overall,,,
+Human,human,all,overall,,,
+```
+
+## File Structure
+
+```text
+CNSL-bench
+|-- assets/              # Public figures
+|-- data/                # Dataset schema, examples, and placeholders
+|-- CNSL-bench.pdf       # Paper
+|-- CITATION.cff
+|-- LICENSE
+`-- README.md
+```
+
 ## Reference
 
 If you find CNSL-bench useful, please cite our paper:
@@ -92,4 +126,3 @@ The citation will be updated after the official ACL proceedings metadata is rele
 For questions about CNSL-bench, please contact:
 
 - Rui Zhao: zhsqzr@stu.xmu.edu.cn
-- Yidong Chen: ydchen@xmu.edu.cn
