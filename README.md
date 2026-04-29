@@ -1,13 +1,13 @@
 # CNSL-bench: Benchmarking Sign Language Understanding in MLLMs
 
-[Paper](./CNSL-bench.pdf) | Dataset Coming Soon | Results Coming Soon
+[arXiv](https://arxiv.org/abs/2604.22367) | [PDF](./CNSL-bench.pdf) | Dataset Coming Soon | Results Coming Soon
 
 CNSL-bench is a Chinese National Sign Language benchmark for evaluating the intrinsic sign language understanding ability of multimodal large language models (MLLMs). It is built from the **National Common Sign Language Dictionary** and contains aligned text descriptions, illustrative images, and sign-language videos.
 
 ## News
 
 - CNSL-bench has been accepted to the ACL main conference.
-- The paper PDF is available in this repository.
+- The paper is available on [arXiv](https://arxiv.org/abs/2604.22367), and the PDF is also available in this repository.
 - The full benchmark data will be released after the copyright-sensitive media files are cleared.
 
 ## Motivation
@@ -71,9 +71,16 @@ The main metric is multiple-choice accuracy. We report results by:
 
 The following figures summarize the main findings from the paper: current MLLMs perform much better on textual sign descriptions than on visual sign inputs, and a clear gap remains between MLLMs and human sign-language understanding across fine-grained articulatory subsets.
 
-![Overall performance on CNSL-bench](./assets/figures/main_result-000.png)
-
-![Subset performance on CNSL-bench](./assets/figures/main_result-001.png)
+<table>
+  <tr>
+    <td><img src="./assets/figures/main_result-000.png" alt="Overall performance on CNSL-bench"></td>
+    <td><img src="./assets/figures/main_result-001.png" alt="Subset performance on CNSL-bench"></td>
+  </tr>
+  <tr>
+    <td align="center">Overall performance on CNSL-bench.</td>
+    <td align="center">Subset performance on CNSL-bench.</td>
+  </tr>
+</table>
 
 ### Result Format
 
@@ -111,6 +118,8 @@ If you find CNSL-bench useful, please cite our paper:
   year = {2026}
 }
 ```
+
+Machine-readable citation metadata is available in [CITATION.cff](./CITATION.cff).
 
 The citation will be updated after the official ACL proceedings metadata is released.
 
