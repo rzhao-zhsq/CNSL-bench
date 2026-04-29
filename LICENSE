@@ -1,0 +1,41 @@
+CNSL-bench Release License Notice
+
+Copyright (c) 2026 Rui Zhao, Xuewen Zhong, Xiaoyun Zheng, Jinsong Su,
+and Yidong Chen.
+
+This repository is prepared as a public research release for CNSL-bench.
+
+Unless a file states otherwise:
+
+- repository documentation, prompt templates, metadata schemas, and lightweight
+  examples are released for research and non-commercial use with attribution;
+- source code added to this repository is released under the MIT License;
+- full benchmark media, including sign-language videos, images, textual entries
+  derived from copyrighted source material, and other copyright-sensitive assets,
+  are not covered by this notice until the authors publish an explicit license
+  for those files.
+
+The accepted paper PDF is distributed for scholarly reference. Please follow the
+publisher and ACL Anthology terms for reuse of the paper itself.
+
+If you redistribute or build upon this repository, cite the CNSL-bench paper and
+preserve this notice.
+
+MIT License for source code
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+source code files in this repository and associated documentation files (the
+"Software"), to deal in the Software without restriction, including without
+limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

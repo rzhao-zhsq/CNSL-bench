@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use CNSL-bench, please cite the paper."
+title: "CNSL-bench: Benchmarking the Sign Language Understanding Capabilities of MLLMs on Chinese National Sign Language"
+authors:
+  - family-names: Zhao
+    given-names: Rui
+  - family-names: Zhong
+    given-names: Xuewen
+  - family-names: Zheng
+    given-names: Xiaoyun
+  - family-names: Su
+    given-names: Jinsong
+  - family-names: Chen
+    given-names: Yidong
+year: 2026
+conference:
+  name: "Annual Meeting of the Association for Computational Linguistics"
+preferred-citation:
+  type: conference-paper
+  title: "CNSL-bench: Benchmarking the Sign Language Understanding Capabilities of MLLMs on Chinese National Sign Language"
+  authors:
+    - family-names: Zhao
+      given-names: Rui
+    - family-names: Zhong
+      given-names: Xuewen
+    - family-names: Zheng
+      given-names: Xiaoyun
+    - family-names: Su
+      given-names: Jinsong
+    - family-names: Chen
+      given-names: Yidong
+  year: 2026
+  conference:
+    name: "Annual Meeting of the Association for Computational Linguistics"
