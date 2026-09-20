@@ -62,3 +62,6 @@ data/placeholders/videos/*
 *.tar
 *.tar.gz
 *.rar
+
+# Public CNSL-bench video examples
+!data/videos/CSY_front_in-1080x1080_out-512x512/*.mp4
