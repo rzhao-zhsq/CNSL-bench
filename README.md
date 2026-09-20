@@ -13,6 +13,25 @@ The benchmark is built by aligning glosses, textual descriptions, and illustrati
 - The public release includes 6,707 aligned metadata records, all textual descriptions, five image examples, and five processed video examples.
 - Main evaluation results for text, image, and video inputs are available [below](#main-results).
 
+## Repository Structure
+
+```text
+CNSL-bench/
+|-- assets/
+|   `-- figures/                                 # Main results and analysis figures
+|-- data/
+|   |-- cnsl_bench.json                          # 6,707 aligned metadata records
+|   |-- examples/                                # Toy evaluation-format examples
+|   |-- images/                                  # Five illustrative image examples
+|   |-- videos/
+|   |   `-- CSY_front_in-1080x1080_out-512x512/ # Five processed video examples
+|   `-- README.md                                # Data schema and access notes
+|-- CNSL-bench.pdf                               # Paper
+|-- CITATION.cff
+|-- LICENSE
+`-- README.md
+```
+
 ## Benchmark Overview
 
 - **Task:** Select the correct sign meaning from four candidates.
@@ -103,24 +122,7 @@ Current MLLMs perform substantially better on textual descriptions than on image
   </tr>
 </table>
 
-## Repository Structure
 
-```text
-CNSL-bench/
-|-- assets/
-|   `-- figures/                                 # Main results and analysis figures
-|-- data/
-|   |-- cnsl_bench.json                          # 6,707 aligned metadata records
-|   |-- examples/                                # Toy evaluation-format examples
-|   |-- images/                                  # Five illustrative image examples
-|   |-- videos/
-|   |   `-- CSY_front_in-1080x1080_out-512x512/ # Five processed video examples
-|   `-- README.md                                # Data schema and access notes
-|-- CNSL-bench.pdf                               # Paper
-|-- CITATION.cff
-|-- LICENSE
-`-- README.md
-```
 
 ## Citation
 
